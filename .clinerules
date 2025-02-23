@@ -1,0 +1,179 @@
+# Cline Rules: Local Crawler Microservice
+
+## Project Intelligence
+
+### Project Type
+- Microservice architecture
+- Node.js/TypeScript backend
+- Docker containerized
+- RESTful API interface
+
+### Core Patterns
+1. **Code Organization**
+   - src/
+     - controllers/ (API endpoints)
+     - services/ (business logic)
+     - models/ (data models)
+     - utils/ (helpers)
+     - config/ (configuration)
+   - tests/
+   - docs/
+
+2. **Naming Conventions**
+   - Files: kebab-case.ts
+   - Classes: PascalCase
+   - Functions/Variables: camelCase
+   - Constants: UPPER_SNAKE_CASE
+
+3. **Code Style**
+   - Use TypeScript strict mode
+   - ESLint + Prettier configuration
+   - Maximum line length: 100
+   - 2 spaces for indentation
+
+### Implementation Rules
+1. **Type Safety**
+   - Strict TypeScript configuration
+   - No 'any' types without explicit justification
+   - Interface-first design
+   - Comprehensive type definitions
+
+2. **Error Handling**
+   - Custom error classes
+   - Structured error responses
+   - Comprehensive error logging
+   - Graceful degradation
+
+3. **Testing Requirements**
+   - Unit tests for all services
+   - Integration tests for APIs
+   - Test coverage minimum: 80%
+   - Mock external dependencies
+
+4. **Documentation**
+   - JSDoc for public APIs
+   - README for each directory
+   - OpenAPI/Swagger for endpoints
+   - Update Memory Bank regularly
+
+### Quality Standards
+1. **Code Review Checklist**
+   - Type safety
+   - Error handling
+   - Test coverage
+   - Documentation
+   - Performance considerations
+
+2. **Performance Guidelines**
+   - Avoid blocking operations
+   - Implement pagination
+   - Use appropriate indexes
+   - Monitor memory usage
+
+### Security Rules
+1. **File System Access**
+   - Read-only operations
+   - Path sanitization
+   - Access logging
+   - Error isolation
+
+2. **API Security**
+   - Input validation
+   - Rate limiting
+   - Error message sanitization
+   - Authentication when required
+
+### Development Workflow
+1. **Version Control**
+   - Feature branches
+   - Meaningful commit messages
+   - PR reviews required
+   - No direct main commits
+
+2. **Deployment Process**
+   - Multi-stage Docker builds
+   - Environment-specific configs
+   - Health check requirements
+   - Backup procedures
+
+### Memory Bank Management
+1. **Update Frequency**
+   - After major feature completion
+   - When architectural changes occur
+   - During version releases
+   - On significant decisions
+
+2. **Required Updates**
+   - Technical documentation
+   - API specifications
+   - Database schemas
+   - Configuration changes
+
+### Project Preferences
+1. **Stack Choices**
+   - TypeScript for type safety
+   - Express for API framework
+   - SQLite/PostgreSQL for database
+   - Jest for testing
+
+2. **Tool Configurations**
+   - ESLint for linting
+   - Prettier for formatting
+   - Husky for git hooks
+   - Docker for containerization
+
+### Maintenance Guidelines
+1. **Code Maintenance**
+   - Regular dependency updates
+   - Technical debt tracking
+   - Performance monitoring
+   - Security audits
+
+2. **Documentation Maintenance**
+   - Keep Memory Bank current
+   - Update API documentation
+   - Maintain change logs
+   - Review architecture docs
+
+### Integration Rules
+1. **API Design**
+   - RESTful principles
+   - Consistent response format
+   - Proper status codes
+   - Comprehensive documentation
+
+2. **Error Responses**
+   ```typescript
+   interface ErrorResponse {
+     code: string;
+     message: string;
+     details?: Record<string, any>;
+     timestamp: string;
+   }
+   ```
+
+### Monitoring Requirements
+1. **Metrics**
+   - Response times
+   - Error rates
+   - Resource usage
+   - Scan performance
+
+2. **Logging**
+   - Structured log format
+   - Appropriate log levels
+   - Context inclusion
+   - PII exclusion
+
+### Configuration Management
+1. **Environment Variables**
+   - Required configs documented
+   - Defaults provided
+   - Validation on startup
+   - Sensitive data handling
+
+2. **Feature Flags**
+   - Configuration driven
+   - Default values
+   - Override mechanism
+   - Documentation required
