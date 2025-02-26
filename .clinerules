@@ -3,12 +3,14 @@
 ## Project Intelligence
 
 ### Project Type
+
 - Microservice architecture
 - Node.js/TypeScript backend
 - Docker containerized
 - RESTful API interface
 
 ### Core Patterns
+
 1. **Code Organization**
    - src/
      - controllers/ (API endpoints)
@@ -32,6 +34,7 @@
    - 2 spaces for indentation
 
 ### Implementation Rules
+
 1. **Type Safety**
    - Strict TypeScript configuration
    - No 'any' types without explicit justification
@@ -57,6 +60,7 @@
    - Update Memory Bank regularly
 
 ### Quality Standards
+
 1. **Code Review Checklist**
    - Type safety
    - Error handling
@@ -71,6 +75,7 @@
    - Monitor memory usage
 
 ### Security Rules
+
 1. **File System Access**
    - Read-only operations
    - Path sanitization
@@ -84,6 +89,7 @@
    - Authentication when required
 
 ### Development Workflow
+
 1. **Version Control**
    - Feature branches
    - Meaningful commit messages
@@ -97,6 +103,7 @@
    - Backup procedures
 
 ### Memory Bank Management
+
 1. **Update Frequency**
    - After major feature completion
    - When architectural changes occur
@@ -110,6 +117,7 @@
    - Configuration changes
 
 ### Project Preferences
+
 1. **Stack Choices**
    - TypeScript for type safety
    - Express for API framework
@@ -123,6 +131,7 @@
    - Docker for containerization
 
 ### Maintenance Guidelines
+
 1. **Code Maintenance**
    - Regular dependency updates
    - Technical debt tracking
@@ -136,6 +145,7 @@
    - Review architecture docs
 
 ### Integration Rules
+
 1. **API Design**
    - RESTful principles
    - Consistent response format
@@ -143,6 +153,7 @@
    - Comprehensive documentation
 
 2. **Error Responses**
+
    ```typescript
    interface ErrorResponse {
      code: string;
@@ -153,6 +164,7 @@
    ```
 
 ### Monitoring Requirements
+
 1. **Metrics**
    - Response times
    - Error rates
@@ -166,6 +178,7 @@
    - PII exclusion
 
 ### Configuration Management
+
 1. **Environment Variables**
    - Required configs documented
    - Defaults provided
